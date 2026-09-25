@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+</head>
+<body style="background: rgb(130, 148, 182);">
+  <h1 style="color: red;">Admin Dashboard</h1>
+
+  <fieldset>
+
+      <h2>Upload Course Material</h2>
+      <form action="upload-course-handler.html" method="post" enctype="multipart/form-data">
+        <label for="courseName">Course Name:</label><fieldset>
+        <input type="text" id="courseName" name="courseName">
+
+        <label for="courseFile">Select Course File:</label>
+        <input type="file" id="courseFile" name="courseFile">
+
+        <input type="submit" value="Upload Course">
+        </fieldset>
+      </form>
+
+      <fieldset>
+
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="upload-course-handler.html">Upload New Course</a></li>
+        <li><a href="trainee-list.html">View All Trainees</a></li>
+        <li><a href="course-list.html">View All Courses</a></li>
+        <li><a href="reports.html">Generate Reports</a></li>
+      </ul>
+      </fieldset>
+  </fieldset>
+
+</body>
+</html>

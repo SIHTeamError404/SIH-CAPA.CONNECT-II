@@ -1,0 +1,155 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trainee Dashboard</title>
+</head>
+<body style="background: rgb(252, 201, 172);">
+
+
+  <!-- Main Container Centered using HTML Table -->
+  <table align="center" width="750" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+
+        <!-- Header Card -->
+        <fieldset>
+          <legend><b>Profile Info</b></legend>
+          <table width="100%" border="0" cellpadding="5">
+            <tr>
+              <td>
+                <h1>Welcome, Rahul Sharma!</h1>
+                <p><b>Role:</b> Trainee | <b>Enrolled Courses:</b> 2</p>
+              </td>
+              <td align="right" valign="top">
+                <a href="profile-photo.html"><button>View Profile</button></a>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <br>
+
+        <!-- My Learning Section -->
+        <fieldset>
+          <legend><b>My Learning</b></legend>
+          <table width="100%" border="1" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
+            <thead>
+              <tr bgcolor="#E9ECEF">
+                <th align="left">Course</th>
+                <th align="left">Progress</th>
+                <th align="center">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Web Development</b></td>
+                <td>
+                  <progress value="35" max="100"></progress> 35%
+                </td>
+                <td align="center">
+                  <a href="continue-learning.html"><button>Continue</button></a>
+                </td>
+              </tr>
+              <tr>
+                <td><b>Data Analytics</b></td>
+                <td>
+                  <progress value="10" max="100"></progress> 10%
+                </td>
+                <td align="center">
+                  <a href="continue-learning.html"><button>Continue</button></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Performance & Progress Metrics -->
+        <fieldset>
+          <legend><b>Overall Performance</b></legend>
+          <table width="100%" border="1" cellpadding="8" cellspacing="0" bgcolor="#FFFFFF">
+            <tr>
+              <td><b>Overall Progress</b></td>
+              <td><progress value="5" max="100"></progress> 5%</td>
+            </tr>
+            <tr>
+              <td><b>Average Quiz Score</b></td>
+              <td><b>82%</b></td>
+            </tr>
+            <tr>
+              <td><b>Assignment Status</b></td>
+              <td><b>3 of 4 Submitted</b></td>
+            </tr>
+            <tr>
+              <td><b>Learning Hours</b></td>
+              <td><b>38 hrs</b></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Quick Resources Links -->
+        <fieldset>
+          <legend><b>Learning Materials</b></legend>
+          <table width="100%" border="0" cellpadding="10" cellspacing="5">
+            <tr align="center">
+              <td bgcolor="#FFFFFF"><a href="video-lectures.html"><b>🎥 Video Lectures</b></a></td>
+              <td bgcolor="#FFFFFF"><a href="notes.html"><b>📄 PDFs / Notes</b></a></td>
+              <td bgcolor="#FFFFFF"><a href="assignments.html"><b>📝 Assignments</b></a></td>
+              <td bgcolor="#FFFFFF"><a href="quizzes.html"><b>❓ Quizzes</b></a></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <br>
+
+        <!-- AI Assistant -->
+        <fieldset>
+          <legend><b>AI Learning Assistant</b></legend>
+          <form action="ai-assistant-handler.html" method="post">
+            <table width="100%" border="0" cellpadding="5">
+              <tr>
+                <td width="80%">
+                  <input type="text" name="aiquery" placeholder="Ask a question about your course..." style="width: 98%;">
+                </td>
+                <td width="20%">
+                  <input type="submit" value="Ask AI">
+                </td>
+              </tr>
+            </table>
+          </form>
+          <hr noshade size="1">
+          <p>
+            <b>Quick Actions:</b> 
+            <a href="ai-assistant.html">Summarize Material</a> | 
+            <a href="ai-assistant.html">Generate Practice Questions</a>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Notifications using collapsible HTML details tag -->
+        <fieldset>
+          <legend><b>Notifications</b></legend>
+          <details open>
+            <summary><b>Recent Updates (4)</b></summary>
+            <ul>
+              <li>New course available: <b>Introduction to Machine Learning</b></li>
+              <li>Assignment deadline approaching: <b>Assignment 4</b></li>
+              <li>Quiz result published: <b>Python Basics</b></li>
+              <li>Trainer announcement: <b>New lesson added</b></li>
+            </ul>
+          </details>
+        </fieldset>
+
+        <br>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

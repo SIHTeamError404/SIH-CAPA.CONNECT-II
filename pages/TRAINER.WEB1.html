@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Portal</title>
+</head>
+<body style="background: rgb(228, 182, 255);">
+<fieldset>
+        <fieldset>
+        <h1>Course Portal</h1>
+
+        <!-- Navigation -->
+        <p>
+          <a href="#courses">Courses</a> |
+          <a href="#create">Create Course</a> |
+          <a href="#learners">Learners</a> |
+          <a href="#ai">AI Tools</a>
+        </p>
+
+        <hr>
+        </fieldset>
+        <fieldset>
+            <!-- My Courses List -->
+            <h2 id="courses">My Courses</h2>
+            <ul>
+              <li>
+                <strong>Web Development</strong> (HTML, CSS, JS) - 
+                <a href="manage-course.html">Edit Course</a>
+              </li>
+              <li>
+                <strong>Data Analytics</strong> (Intro to Data) - 
+                <a href="manage-course.html">Edit Course</a>
+              </li>
+            </ul>
+
+            <hr>
+        </fieldset>
+        <fieldset>
+            <!-- Simple Create Course Form -->
+            <h2 id="create">Create New Course</h2>
+            <form action="create-course-handler.html" method="post" enctype="multipart/form-data">
+              <p>
+                Course Title:<br>
+                <input type="text" name="title" required>
+              </p>
+              <p>
+                Description:<br>
+                <textarea name="desc" rows="3" cols="30" required></textarea>
+              </p>
+              <p>
+                Difficulty:<br>
+                <select name="level">
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Advanced</option>
+                </select>
+              </p>
+              <p>
+                Thumbnail:<br>
+                <input type="file" name="thumb" accept="image/*">
+              </p>
+              <input type="submit" value="Save Course">
+            </form>
+
+            <hr>
+        </fieldset>
+        <fieldset>
+            <!-- Learners List -->
+            <h2 id="learners">Learners</h2>
+            <ul>
+              <li>Rahul Sharma - Enrolled: 01-Jan-2026 (In Progress)</li>
+              <li>Priya Verma - Enrolled: 15-Feb-2026 (In Progress)</li>
+            </ul>
+        </fieldset>
+        <hr>
+          <fieldset>
+          <!-- AI Assistant & Tools -->
+          <h2 id="ai">AI Tools</h2>
+          <form action="ai-handler.html" method="post" enctype="multipart/form-data">
+            <p>
+              Upload Document:<br>
+              <input type="file" name="doc" required>
+              <input type="submit" value="Upload & Process">
+            </p>
+          </form>
+          <ul>
+            <li><a href="ai-assistant.html?action=quiz">Generate Quiz Questions</a></li>
+            <li><a href="ai-assistant.html?action=summary">Generate Course Summary</a></li>
+          </ul>
+        </fieldset>
+</fieldset>
+</body>
+</html>
